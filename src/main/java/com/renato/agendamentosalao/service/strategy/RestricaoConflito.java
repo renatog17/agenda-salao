@@ -19,7 +19,7 @@ public class RestricaoConflito implements AgendamentoRestricao {
 		boolean existeAgendamento = false;
 		try {
 			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/agenda_salao", "root", "admin");
-			String sql = "SELECT COUNT(*) FROM agendamento WHERE hora_data_inicio = ?";
+			String sql = "SELECT COUNT(*) FROM agendamento WHERE hora_data_inicio = ? AND ativo = true";
 			PreparedStatement stmt = conn.prepareStatement(sql);
 			// Converter LocalDateTime para String no formato esperado pelo banco de dados
 			String dataFormatada = horaData.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));

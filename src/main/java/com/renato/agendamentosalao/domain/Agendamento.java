@@ -11,8 +11,6 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Temporal;
-import jakarta.persistence.TemporalType;
 
 @Entity
 public class Agendamento {
@@ -25,6 +23,7 @@ public class Agendamento {
 	@ManyToOne
 	@JoinColumn(name = "cliente_id")
 	private Cliente cliente;
+	private Boolean ativo;
 
 	public Agendamento() {
 		// TODO Auto-generated constructor stub
@@ -34,14 +33,27 @@ public class Agendamento {
 		super();
 		this.horaDataInicio = Timestamp.valueOf(horaDataInicio);
 		this.cliente = cliente;
+		this.ativo = true;
+	}
+
+	public void setAtivo(Boolean ativo) {
+		this.ativo = ativo;
 	}
 
 	public Long getId() {
 		return id;
 	}
-	
+
 	public LocalDateTime getHoraDataInicio() {
 		return horaDataInicio.toLocalDateTime();
+	}
+
+	public Cliente getCliente() {
+		return cliente;
+	}
+
+	public Boolean getAtivo() {
+		return ativo;
 	}
 
 	@Override

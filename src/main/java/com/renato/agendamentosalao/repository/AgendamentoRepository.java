@@ -3,6 +3,8 @@ package com.renato.agendamentosalao.repository;
 import java.sql.Timestamp;
 import java.util.Optional;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -17,4 +19,6 @@ public interface AgendamentoRepository extends JpaRepository<Agendamento, Long> 
 
 	Optional<Agendamento> findByHoraDataInicio(Timestamp horaDataInicio);
 
+	Page<Agendamento> findByClienteIdAndHoraDataInicioAfterAndAtivoTrue(Long clienteId, Timestamp horaDataInicio,
+			Pageable pageable);
 }
