@@ -20,6 +20,8 @@ Para simplificar a criação de consultas personalizadas, utilizamos os Query Me
 
 A documentação da API foi elaborada utilizando o Swagger, uma ferramenta poderosa para descrever, consumir e visualizar APIs RESTful. Com o Swagger, é possível fornecer uma documentação interativa e amigável para os desenvolvedores, facilitando a compreensão dos endpoints, parâmetros e respostas da API.
 
+![image](https://github.com/renatog17/agenda-salao/assets/54106116/40cfc078-96da-4f8a-ac86-266e8e3dead6)
+
 Para acessar a documentação da API, basta iniciar o servidor e acessar o endpoint este endpotin ```http://localhost:8080/swagger-ui/index.html#/'```
 
 
