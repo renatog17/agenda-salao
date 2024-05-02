@@ -16,3 +16,11 @@ Foi adotado o padrão de design Strategy para realizar as validações necessár
 ## Query Methods do Spring Data 📝
 Para simplificar a criação de consultas personalizadas, utilizamos os Query Methods disponibilizados pelo Spring Data. Essa funcionalidade nos permite definir métodos nos repositórios usando uma convenção de nomenclatura específica, facilitando a interação com o banco de dados sem a necessidade de escrever consultas JPQL ou SQL manualmente.
 
+## Documentação da API com Swagger 📑
+
+A documentação da API foi elaborada utilizando o Swagger, uma ferramenta poderosa para descrever, consumir e visualizar APIs RESTful. Com o Swagger, é possível fornecer uma documentação interativa e amigável para os desenvolvedores, facilitando a compreensão dos endpoints, parâmetros e respostas da API.
+
+Para acessar a documentação da API, basta iniciar o servidor e acessar o endpoint este endpotin 'http://localhost:8080/swagger-ui/index.html#/'.
+
+
+
