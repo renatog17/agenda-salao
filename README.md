@@ -1,4 +1,4 @@
-# Agenda de Salão 🌟
+# Agenda Salão 🌟
 
 Este projeto foi desenvolvido utilizando o poderoso framework Spring, aproveitando diversas de suas funcionalidades para proporcionar um sistema de agendamento completo e eficiente para salões de beleza.
 
